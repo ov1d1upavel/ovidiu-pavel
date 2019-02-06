@@ -119,7 +119,7 @@ def fit_linear(filename):
     dy_squared = [dataMap['dy'][i] * dataMap['dy'][i] for i in range(N)]
     dy_squared_mean = np.mean(dy_squared)
 
-    
+
 
     a = (xy_mean - x_mean * y_mean) / (x_squared_mean - x_mean * x_mean)
     b = y_mean - a * x_mean
@@ -165,10 +165,7 @@ def fit_linear(filename):
 
     plt.plot(x, (a * x + b), c='r')
 
-
     plt.title('Linear Regression Plot')
-
-
 
     plt.savefig('linear_fit.svg', format='svg')
 
@@ -177,4 +174,3 @@ def fit_linear(filename):
 
 
 
-fit_linear("/Users/uzieven/Desktop/project2/files/inputcols.txt")
